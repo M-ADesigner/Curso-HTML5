@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head> <!--Se pueden agragar caracteristicas que no nesesariamente el usuario tenga que ver-->
+    <title>Maicol Avila</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+        <!-----------------------Tablas------------------>
+        <!--tr(fila dentro de la tabla)-->
+        <!--th(Es la cabezera)-->
+        <!--TD(Definir elementos estandares dentro de neustra tabla)-->
+        <!--Tfoot (de footer pie de la tabla)-->
+        <!--thead,tbody(Sirven para ciertos ordenadores)-->
+        <table style="width: 500px;">
+            <thead> 
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio<th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hola beats</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td>Nintendo wii</td>
+                    <td>$599.990</td>
+                </tr>
+                <tr>
+                    <td>Computador Pc</td>
+                    <td>$199.999</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td>Total</td>
+                <td>$899.999</td>
+            </tfoot>
+        </table>
+
+
+
+    <!-----------------------Listas------------------>
+        <!--Ul lista no ordenada-->
+        <!--Lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+        <!--Listas ordenada con numeros-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">Elemento 1</li>
+                <li style="list-style-type: lower-alpha;">Elemento 2</li>
+                <li style="list-style-type: lower-alpha;">Elemento 3</li>
+                <li style="list-style-type: lower-alpha;">Elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+     <!-----------------------Formularios------------------>
+    <form action="/fomulario " method="POST"> <!--Indicamos a que servidor/// post y get -->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"/> 
+            <!--Dentro e las propiedades que se espera son
+                type="email" confirma que debe tener las caracteristicas de correo
+                type="password"
+                type="radio" 
+                type="text"
+                type="file Selecionar de archivos
+                     "--> 
+        <br>
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su correo"/> 
+        <br>
+        <textarea cols="50" rows="10" id="comentario"  placeholder="Escriba su mensaje" name="comentario" ></textarea>
+        <br>
+            <!-- La etiqueta cols es el ancho la etiqueta rows la altura -->
+    <!--------------------------------------------------------------------------------->
+     <!--Tipos de button es mucho mas perzonalizable-->
+    <button type="submit">Enviar</button> <!-- indicar que los datos ingresados van a una base de datos especifica-->
+    <button type="reset">reset</button> <!--Deja el formalario como estaba inicialmente-->  
+    <button type="menu"></button>
+    <button type="submit"></button>
+   
+    <!--Button dentro de una etiqueta de form por defecto va a tratar de enviar el formulario-->
+    </form>
+
+    <!--------------------------------------------Etiquetas para titulos-------------------------------------------->
+
+    <h1>  Etiqueta h1   </h1>
+    <h2>  Etiqueta h2   </h2>
+    <h3>  Etiqueta h3   </h3>   <!--Dentro de las etiquetas head se pueden hacer titulos 
+                                    Subtitulos o sub sub titulos no es recomendado para parrafos-->
+    <h4>  Etiqueta h4   </h4>
+    <h5>  Etiqueta h5   </h5>
+    <h6>  Etiqueta h6   </h6>    
+    <hr>  <!--Esto es la linea para separar estrofas--> 
+    <p>Esto es un parrado con etiqueta p </p>  
+    <p>Esto es otro parrafo </p>
+
+    <p>
+        Esto es un etiqueta de span dentro de una <span style="color: blue;">EJEMPLO</span> <br> <!--Etiqueta de br salto en linea--> etiqueta parrafo mucho mas largo para mostrar como demostracion
+    </p>
+
+    <a target="_blank" href="http://www.google.com">Ir a google</a> <!--La funcion target hace que pueda abrir otra pestaña llamada a traves de href-->
+    <img  class="coffee" src="assets/coffee.png" style="height: 400px;"/> <!--La etiqueta img no se cierra como las demas sirve para llamar a las imagnes estaticas o una imagen con su url correspondiete-->
+
+</body>
+</html>
